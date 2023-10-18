@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="shortcut icon" href="/src/assets/Logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="dist/output.css" />
+  </head>
+  <body>
+    <main
+      class="h-screen w-full flex flex-col items-center justify-center bg-slate-900"
+    >
+      <h1 class="text-[#f7f1e3] text-6xl mb-5">Calculator</h1>
+      <section
+        class="h-40 w-80 bg-[#84817a] flex items-end justify-end rounded-t-md p-2"
+      >
+        <div id="screenInput"></div>
+        <div id="screenOutput" class="text-right text-[40px]">0</div>
+      </section>
+      <section
+        id="btns"
+        class="grid grid-cols-4 grid-rows-5 gap-2 p-2 w-80 items-center justify-items-center bg-[#d1ccc0] rounded-b-md"
+      >
+        <input
+          class="h-14 w-full text-xl rounded-md col-start-1 col-span-2 bg-[#aaa69d] hover:bg-[#d1ccc0] cursor-pointer border-2 border-solid border-[#aaa69d] active:bg-[#f7f1e3] active:scale-90 transition duration-200"
+          type="button"
+          value="C"
+        />
+        <input
+          class="h-14 w-14 text-xl rounded-full bg-[#aaa69d] hover:bg-[#d1ccc0] cursor-pointer border-2 border-solid border-[#aaa69d] active:bg-[#f7f1e3] active:scale-90 transition duration-200"
+          type="button"
+          value="+"
+        />
+        <input
+          class="h-14 w-14 text-xl rounded-full bg-[#aaa69d] hover:bg-[#d1ccc0] cursor-pointer border-2 border-solid border-[#aaa69d] active:bg-[#f7f1e3] active:scale-90 transition duration-200"
+          type="button"
+          value="-"
+        />
+        <input
+          class="h-14 w-14 text-xl rounded-full bg-[#aaa69d] hover:bg-[#d1ccc0] cursor-pointer border-2 border-solid border-[#aaa69d] active:bg-[#f7f1e3] active:scale-90 transition duration-200"
+          type="button"
+          value="7"
+        />
+        <input
+          class="h-14 w-14 text-xl rounded-full bg-[#aaa69d] hover:bg-[#d1ccc0] cursor-pointer border-2 border-solid border-[#aaa69d] active:bg-[#f7f1e3] active:scale-90 transition duration-200"
+          type="button"
+          value="8"
+        />
+        <input
+          class="h-14 w-14 text-xl rounded-full bg-[#aaa69d] hover:bg-[#d1ccc0] cursor-pointer border-2 border-solid border-[#aaa69d] active:bg-[#f7f1e3] active:scale-90 transition duration-200"
+          type="button"
+          value="9"
+        />
+        <input
+          class="h-14 w-14 text-xl rounded-full bg-[#aaa69d] hover:bg-[#d1ccc0] cursor-pointer border-2 border-solid border-[#aaa69d] active:bg-[#f7f1e3] active:scale-90 transition duration-200"
+          type="button"
+          value="x"
+        />
+        <input
+          class="h-14 w-14 text-xl rounded-full bg-[#aaa69d] hover:bg-[#d1ccc0] cursor-pointer border-2 border-solid border-[#aaa69d] active:bg-[#f7f1e3] active:scale-90 transition duration-200"
+          type="button"
+          value="4"
+        />
+        <input
+          class="h-14 w-14 text-xl rounded-full bg-[#aaa69d] hover:bg-[#d1ccc0] cursor-pointer border-2 border-solid border-[#aaa69d] active:bg-[#f7f1e3] active:scale-90 transition duration-200"
+          type="button"
+          value="5"
+        />
+        <input
+          class="h-14 w-14 text-xl rounded-full bg-[#aaa69d] hover:bg-[#d1ccc0] cursor-pointer border-2 border-solid border-[#aaa69d] active:bg-[#f7f1e3] active:scale-90 transition duration-200"
+          type="button"
+          value="6"
+        />
+        <input
+          class="h-14 w-14 text-xl rounded-full bg-[#aaa69d] hover:bg-[#d1ccc0] cursor-pointer border-2 border-solid border-[#aaa69d] active:bg-[#f7f1e3] active:scale-90 transition duration-200"
+          type="button"
+          value="/"
+        />
+        <input
+          class="h-14 w-14 text-xl rounded-full bg-[#aaa69d] hover:bg-[#d1ccc0] cursor-pointer border-2 border-solid border-[#aaa69d] active:bg-[#f7f1e3] active:scale-90 transition duration-200"
+          type="button"
+          value="1"
+        />
+        <input
+          class="h-14 w-14 text-xl rounded-full bg-[#aaa69d] hover:bg-[#d1ccc0] cursor-pointer border-2 border-solid border-[#aaa69d] active:bg-[#f7f1e3] active:scale-90 transition duration-200"
+          type="button"
+          value="2"
+        />
+        <input
+          class="h-14 w-14 text-xl rounded-full bg-[#aaa69d] hover:bg-[#d1ccc0] cursor-pointer border-2 border-solid border-[#aaa69d] active:bg-[#f7f1e3] active:scale-90 transition duration-200"
+          type="button"
+          value="3"
+        />
+        <input
+          class="h-full w-14 text-xl rounded-md row-start-4 row-span-2 col-start-4 col-end-5 bg-[#aaa69d] hover:bg-[#d1ccc0] cursor-pointer border-2 border-solid border-[#aaa69d] active:bg-[#f7f1e3] active:scale-90 transition duration-200"
+          type="button"
+          value="="
+        />
+        <input
+          class="h-14 w-full text-xl rounded-md col-start-1 col-span-2 bg-[#aaa69d] hover:bg-[#d1ccc0] cursor-pointer border-2 border-solid border-[#aaa69d] active:bg-[#f7f1e3] active:scale-90 transition duration-200"
+          type="button"
+          value="0"
+        />
+        <input
+          class="h-14 w-14 text-xl rounded-full bg-[#aaa69d] hover:bg-[#d1ccc0] cursor-pointer border-2 border-solid border-[#aaa69d] active:bg-[#f7f1e3] active:scale-90 transition duration-200"
+          type="button"
+          value="."
+        />
+      </section>
+    </main>
+    <script src="dist/index.js"></script>
+  </body>
+</html>
