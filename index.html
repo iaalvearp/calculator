@@ -15,25 +15,31 @@
       <section
         class="h-40 w-80 bg-[#84817a] flex items-end justify-end rounded-t-md p-2"
       >
-        <div id="screenInput"></div>
+        <div id="screenInput" class="text-right text-xl"></div>
         <div id="screenOutput" class="text-right text-[40px]">0</div>
       </section>
       <section
-        id="btns"
+        id="divBtns"
         class="grid grid-cols-4 grid-rows-5 gap-2 p-2 w-80 items-center justify-items-center bg-[#d1ccc0] rounded-b-md"
       >
         <input
-          class="h-14 w-full text-xl rounded-md col-start-1 col-span-2 bg-[#aaa69d] hover:bg-[#d1ccc0] cursor-pointer border-2 border-solid border-[#aaa69d] active:bg-[#f7f1e3] active:scale-90 transition duration-200"
+          class="h-14 w-14 text-xl rounded-full col-start-1 bg-[#b33939] hover:bg-[#ff5252] cursor-pointer border-2 border-solid border-[#b33939] active:bg-[#ff793f] active:scale-90 transition duration-200"
           type="button"
           value="C"
         />
         <input
-          class="h-14 w-14 text-xl rounded-full bg-[#aaa69d] hover:bg-[#d1ccc0] cursor-pointer border-2 border-solid border-[#aaa69d] active:bg-[#f7f1e3] active:scale-90 transition duration-200"
+          id="delBtn"
+          class="h-14 w-14 text-xl rounded-full bg-[#cd6133] hover:bg-[#ff793f] cursor-pointer border-2 border-solid border-[#cd6133] active:bg-[#ff793f] active:scale-90 transition duration-200"
+          type="button"
+          value="⌫"
+        />
+        <input
+          class="h-14 w-14 text-xl rounded-full bg-[#cd6133] hover:bg-[#ff793f] cursor-pointer border-2 border-solid border-[#cd6133] active:bg-[#ff793f] active:scale-90 transition duration-200"
           type="button"
           value="+"
         />
         <input
-          class="h-14 w-14 text-xl rounded-full bg-[#aaa69d] hover:bg-[#d1ccc0] cursor-pointer border-2 border-solid border-[#aaa69d] active:bg-[#f7f1e3] active:scale-90 transition duration-200"
+          class="h-14 w-14 text-xl rounded-full bg-[#cd6133] hover:bg-[#ff793f] cursor-pointer border-2 border-solid border-[#cd6133] active:bg-[#ff793f] active:scale-90 transition duration-200"
           type="button"
           value="-"
         />
@@ -53,7 +59,7 @@
           value="9"
         />
         <input
-          class="h-14 w-14 text-xl rounded-full bg-[#aaa69d] hover:bg-[#d1ccc0] cursor-pointer border-2 border-solid border-[#aaa69d] active:bg-[#f7f1e3] active:scale-90 transition duration-200"
+          class="h-14 w-14 text-xl rounded-full bg-[#cd6133] hover:bg-[#ff793f] cursor-pointer border-2 border-solid border-[#cd6133] active:bg-[#f7f1e3] active:scale-90 transition duration-200"
           type="button"
           value="x"
         />
@@ -73,7 +79,7 @@
           value="6"
         />
         <input
-          class="h-14 w-14 text-xl rounded-full bg-[#aaa69d] hover:bg-[#d1ccc0] cursor-pointer border-2 border-solid border-[#aaa69d] active:bg-[#f7f1e3] active:scale-90 transition duration-200"
+          class="h-14 w-14 text-xl rounded-full bg-[#cd6133] hover:bg-[#ff793f] cursor-pointer border-2 border-solid border-[#cd6133] active:bg-[#f7f1e3] active:scale-90 transition duration-200"
           type="button"
           value="/"
         />
@@ -93,7 +99,7 @@
           value="3"
         />
         <input
-          class="h-full w-14 text-xl rounded-md row-start-4 row-span-2 col-start-4 col-end-5 bg-[#aaa69d] hover:bg-[#d1ccc0] cursor-pointer border-2 border-solid border-[#aaa69d] active:bg-[#f7f1e3] active:scale-90 transition duration-200"
+          class="h-full w-14 text-xl rounded-md row-start-4 row-span-2 col-start-4 col-end-5 bg-[#cd6133] hover:bg-[#ff793f] cursor-pointer border-2 border-solid border-[#cd6133] active:bg-[#f7f1e3] active:scale-90 transition duration-200"
           type="button"
           value="="
         />
